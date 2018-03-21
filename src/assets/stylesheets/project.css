@@ -1,0 +1,37 @@
+  	.project {
+  		margin-bottom:5%;
+  	}
+	.project h1 {
+		color:black;
+		margin:5% 0;
+		font-size:50px;
+	}
+  	.projects-1 {
+  		position:relative;
+  	}
+  	.projects-2 {
+  		position:absolute;
+  		width:100%;
+  		top:100%;
+  		bottom:0;
+  		visibility:hidden;
+  		-webkit-transition:0.5;
+  		transition:0.5s;
+  		padding-left:10%;
+  		border-bottom:1px solid transparent;
+  	}
+  	.projects-1:hover .projects-2 {
+  		background-color:rgba(0,0,0,0.5);
+  		visibility:visible;
+  		top:55%;
+  		border-bottom:5px solid #0D7E94;
+  	}
+  	.projects-2 h3 {
+  		color:skyblue;
+  		font-weight:bold;
+  	}
+  	.projects-2 p {
+  		color:white;
+  		font-size:15px;
+  		font-weight:bold;
+  	}

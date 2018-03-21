@@ -1,0 +1,32 @@
+	.contact-1 {
+  		margin-bottom:5%;
+  	}
+  	.contact-1 h1 {
+  		color:black;
+  		font-size:45px;
+  		margin:5% 0;
+  	}
+  	.contact-1 h3 {
+  		color:skyblue;
+  		font-weight:bold;
+  	}
+  	.contact-1 p {
+  		font-size:18px;
+  	}
+  	.contact-1 p span {
+  		color:skyblue;
+  		margin-right:5%;
+  	}
+  	.contact-1 label {
+  		color:#989898;
+  	}
+  	.contact-1 .form-control {
+  		border-radius:0;
+  		border-color:#484848;
+  	}
+  	.contact-1 .btn {
+  		background-color:#1DC7C2;
+  		color:white;
+  		border-radius:0;
+  		border:none;
+  	}
