@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Accounts Template</title>
+	<link rel="stylesheet" href="assets/stylesheets/main.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<script src="assets/js/main.js"></script>
+  	<script src="assets/js/increase.js"></script>
+</head>
+<body onload="ok()">
+	<ul class="topmost">
+		<li><a href="#mail"><span class="fa fa-envelope"></span> info@example.com</a></li>
+		<li style="float:right"><a href="#linkedin"><span class="fa fa-linkedin"></span></a></li>
+		<li style="float:right"><a href="#pinterest"><span class="fa fa-pinterest"></span></a></li>
+		<li style="float:right"><a href="#twitter"><span class="fa fa-twitter"></span></a></li>
+		<li style="float:right"><a href="#facebook"><span class="fa fa-facebook"></span></a></li>
+	</ul>
+	<nav class="navbar navbar-inverse" id="short">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand"><span class="first">A</span>CCOUNTS</a>
+		</div>
+		<div class="collapse navbar-collapse" id="mynavbar">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="aboutus.html">ABOUT</a></li>
+				<li class="dropdown">
+					<a href="#pages" class="dropdown-toggle" data-toggle="dropdown">PAGES<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#shortcodes">SHORT CODES</a></li>
+						<li><a class="yo" href="#webicons">WEB ICONS</a></li>
+					</ul>
+				</li>
+				<li><a href="projects.html">PROJECTS</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="carousel slide" id="mycarousel" data-ride="carousel">
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="assets/images-main/Carousel_1.jpg" style="width:100%">
+			</div>
+			<div class="item">
+				<img src="assets/images-main/Carousel_2.jpg" style="width:100%">
+			</div>
+			<div class="item">
+				<img src="assets/images-main/Carousel_3.jpg" style="width:100%">
+			</div>
+		</div>
+		<a class="left carousel-control" href="#mycarousel" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#mycarousel" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+	<div class="container">
+		<h1 class="text-center font-1">Tax Calculator</h1>
+		<div class="row">
+			<div class="col-sm-6">
+				<p class="font-2">Vivamus lacinia odio ut delectus reiciendis maiores alias consequatur.
+				Vivamus lacinia odio ut delectus reiciendis maiores alias consequatur.
+				Vivamus lacinia odio ut delectus reiciendis maiores alias consequatur.</p>
+				<br>
+				<form>
+					<div class="col-sm-6">
+						<label for="area">Choose your business area</label>
+						<select id="area" name="area">
+							<option>Retail</option>
+							<option>Retail</option>
+							<option>More..</option>
+						</select>
+						<br><br>
+						<label for="employee">Employees number</label>
+						<select id="employee" name="employee">
+							<option>1-2</option>
+							<option>5-10</option>
+							<option>10-50</option>
+						</select>
+						<br><br>
+						<label for="payment">Total Payment</label>
+						<input type="text" id="payment">
+					</div>
+					<div class="col-sm-6">
+						<label for="country">Country of residence</label>
+						<select id="country" name="country">
+							<option>USA</option>
+							<option>INDIA</option>
+							<option>LONDON</option>
+							<option>MORE..</option>
+						</select>
+						<br><br>
+						<label for="income">Yearly Income</label>
+						<input type="text" id="income">
+					</div>
+				</form>
+			</div>
+			<div class="col-sm-6 down">
+				<img src="assets/images-main/taxCalculator.jpg" style="width:100%">
+			</div>
+		</div>
+	</div>
+	<div class="plan" id="update" onmouseover="parallax()">
+			<div class="row content">
+				<div class="col-sm-3">
+					<div class="well">
+						<span class="glyphicon glyphicon-thumbs-up"></span><h2 id="increase1">1</h2>
+						<br>
+						<h4>SATISFIED</h4>
+					</div>
+			</div>
+			<div class="col-sm-3">
+					<div class="well">
+						<span class="glyphicon glyphicon-user"></span><h2 id="increase2">1</h2>
+						<br>
+						<h4>VISITED CLIENTS</h4>
+					</div>
+			</div>
+			<div class="col-sm-3">
+					<div class="well">
+						<span class="glyphicon glyphicon-heart-empty"></span><h2 id="increase3">1</h2>
+						<br>
+						<h4>BEST DEALS</h4>
+					</div>
+			</div>
+			<div class="col-sm-3">
+					<div class="well">
+						<span class="fa fa-trophy"></span><h2 id="increase4">1</h2>
+						<br>
+						<h4>WIN AWARDS</h4>
+					</div>
+			</div>
+			</div>
+	</div>
+	<div class="container text-center tax-services">
+		<h1 class="font-1">Tax Services</h1>
+		<div class="row">
+			<div class="col-sm-4">
+				<span class="fa fa-user"></span>
+				<h3>Property Taxes</h3>
+				<p class="font-2">Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias consequatur aut</p>
+			</div>
+			<div class="col-sm-4">
+				<span class="fa fa-newspaper-o"></span>
+				<h3>Tax Planning</h3>
+				<p class="font-2">Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias consequatur aut</p>
+			</div>
+			<div class="col-sm-4">
+				<span class="fa fa-check"></span>
+				<h3>Bookkeeping</h3>
+				<p class="font-2">Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias consequatur aut</p>
+			</div>
+		</div>
+	</div>
+	<div class="container packs">
+		<div class="row text-center">
+			<h1 class="font-1">Price-Table</h1>
+			<div class="col-sm-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h2>STARTER</h2>
+					</div>
+					<div class="panel-body">
+						<h1><b>54$</b></h1>
+						<p>5GBSpace amount</p>
+						<p>20users</p>
+						<p>20Pages</p>
+						<p>No Support</p>
+						<p>1Database</p>
+					</div>
+					<div class="panel-footer">
+						<h4>Contact Now</h4>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h2>BUSINESS</h2>
+					</div>
+					<div class="panel-body">
+						<h1><b>99$</b></h1>
+						<p>10GBSpace amount</p>
+						<p>Unlimited users</p>
+						<p>50Pages</p>
+						<p>Free Support</p>
+						<p>20Databases</p>
+					</div>
+					<div class="panel-footer">
+						<h4>Contact Now</h4>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h2>ULTIMATE</h2>
+					</div>
+					<div class="panel-body">
+						<h1><b>199$</b></h1>
+						<p>100GBSpace amount</p>
+						<p>Unlimitedusers</p>
+						<p>100Pages</p>
+						<p>Free Support</p>
+						<p>Unlimited Database</p>
+					</div>
+					<div class="panel-footer">
+						<h4>Contact Now</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="container-fluid" id="myFooter">
+	</footer>
+</body>
+</html>
