@@ -1,3 +1,15 @@
+document.addEventListener('scroll', gotIt);
+var executed = 0;
+function gotIt() {
+	var top = window.pageYOffset + window.innerHeight;
+	var isVisible = document.getElementById('update').offsetTop;
+	if(top > isVisible && executed < 2) {
+		executed++;
+		parallax();
+	}
+	if(window.pageYOffset < 800)
+		executed=0;
+}
 function parallax() {
 	var i=1;
 	var x1=document.getElementById("increase1");
@@ -11,21 +23,21 @@ function parallax() {
 	function myTimer1() {
 		if(i<=1000)
 			x1.innerHTML=i;
-		i+=28;
+		i+=8;
 	}
 	function myTimer2() {
 		if(i<=1000)
 			x2.innerHTML=i;
-		i+=28;
+		i+=8;
 	}
 	function myTimer3() {
 		if(i<=800)
 			x3.innerHTML=i;
-		i+=28;
+		i+=8;
 	}
 	function myTimer4() {
 		if(i<=800)
 			x4.innerHTML=i;
-		i+=28;
+		i+=8;
 	}
 }
